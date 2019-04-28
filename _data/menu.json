@@ -1,0 +1,12 @@
+pages: [
+  {
+    name : 'About',
+    url : '/about' ,
+    title: 'About'
+  },
+  {
+    name: 'Contact' ,
+    url : '/Contact',
+    title: 'Contact'
+  }
+]

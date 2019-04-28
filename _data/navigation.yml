@@ -1,0 +1,11 @@
+main:
+  - title: "SMART"
+    url: /iharsh08
+  - title: "Greetings Comrade!"
+    url: /goal1
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+  - title: "External Link"
+    url: https://google.com

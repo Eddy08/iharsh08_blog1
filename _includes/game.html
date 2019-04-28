@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+  #finish_line{
+    position: relative;
+    top:1%;
+    height: 70%;
+    width: 20%;
+    background-color: red;
+  }
+  #finish_line:hover{
+    animation-name: remove-background;
+    animation-duration: 5s;
+  }
+  .player{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding: 5%;
+    position: fixed;
+    animation-name: race;
+    animation-duration: 10s;
+
+  }
+  .player:hover{
+    animation-name: highlight_player;
+    animation-duration: 10s;
+  }
+  #turtle{
+    top: 30%;
+    font-size: 100px;
+    background-color:lightgreen;
+    opacity:  0.8;
+    border-radius: 100%;
+    animation-timing-function: linear;
+  }
+  #dino{
+    top: 50%;
+    font-size: 100px;
+    background-color: lightgrey;
+    opacity: 0.7;
+    border-radius: 100%;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes remove-background {
+  100%{
+    opacity: 0;
+  }
+  }
+  @keyframes highlight_player{
+    100%{
+      background-color: #347bed;
+    }
+  }
+  @keyframes race{
+    0%{
+      right: 0%
+    }
+    25%{
+      right: 25%;
+    }
+    50%{
+      right: 50%;
+
+    }
+    75%{
+      right: 75%;
+    }
+    100%{
+      opacity: 0.2;
+      right: 100%;
+
+    }
+  }
+
+  }
+</style>
+</head>
+<body>
+  <div class="player" id="turtle">
+    🐢
+  </div>
+  <div class="player" id="dino">
+    🦕
+  </div>
+  <div id="finish_line">
+  </div>
+</body>
+</html>

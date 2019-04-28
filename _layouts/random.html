@@ -1,0 +1,34 @@
+---
+layout: "wrapper"
+author: "Harsh"
+---
+<h1> ❤🌍🌼</h1>
+
+<pre>
+{% for post in site.posts %}
+
+<li>
+    <a style="{% if page.url == post.url %}color: coral;{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+</li>
+    {{ post.author }}
+{% endfor %}
+</pre>
+<br>
+{% if page.title == "SMART"%}
+    SMART Goals 🤖 !!
+{% endif %}
+<hr><pre>
+        <h5>{{ page.title }}
+        {{ layout.author }}</h5>
+</pre>        <hr>
+{{ content }}
+<hr>
+{% for animal in site.data.animals %}
+{{ animal.name }}   ,  {{animal.skills}} <br>
+{% endfor %}
+
+{% for file in site.static_files %}
+    {% if file.image %}
+        <img src="{{file.path}}" alt="📛">
+    {% endif %}
+{% endfor %}
